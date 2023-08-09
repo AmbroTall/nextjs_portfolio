@@ -1,0 +1,43 @@
+.container {
+}
+
+.title {
+  font-size: 60px;
+}
+
+.subtitle {
+  font-size: 30px;
+  padding: 10px 0px;
+}
+
+.categories {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  width: 250px;
+  height: 350px;
+  position: relative;
+  border: 3px solid #bbb;
+  background-size: cover !important;
+}
+
+.card:nth-child(1) {
+  background: url("/illustration.png");
+}
+.card:nth-child(2) {
+  background: url("/websites.jpg");
+}
+.card:nth-child(3) {
+  background: url("/apps.jpg");
+}
+.card h1 {
+  position: absolute;
+  bottom: 5px;
+  right: 2px;
+}
+
+.card:hover h1 {
+  color: #53c28b;
+}
