@@ -7,10 +7,8 @@ import Darkmode from "../darkMode/page";
 const navlinks = [
   { id: 1, name: "Home", url: "/" },
   { id: 2, name: "Portfolio", url: "/portfolio" },
-  { id: 3, name: "Blog", url: "/blog" },
   { id: 4, name: "About", url: "/about" },
   { id: 5, name: "Contact", url: "/contact" },
-  { id: 6, name: "Dashboard", url: "/dashboard" },
 ];
 
 const NavBar = () => {
@@ -26,9 +24,6 @@ const NavBar = () => {
             {link.name}
           </Link>
         ))}
-        <button className={styles.logout} onClick={() => console.log("Logout")}>
-          Logout
-        </button>
       </div>
     </div>
   );
