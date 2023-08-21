@@ -6,7 +6,7 @@ import Button from "@/components/button/Button";
 import { projects } from "../projects";
 
 const Category = ({ params }) => {
-  const [projo, setProjo] = useState();
+  const [projo, setProjo] = useState([]);
   useEffect(() => {
     const data = projects?.filter((x) => x.category === params.category);
     setProjo(data);
