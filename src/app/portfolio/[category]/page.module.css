@@ -48,3 +48,11 @@
     flex-direction: row;
   }
 }
+.button {
+  color: #fff;
+  padding: 20px;
+  width: max-content;
+  border: none;
+  background-color: #53c28b;
+  border-radius: 5px;
+}
