@@ -8,30 +8,30 @@ import { projects } from "../projects";
 const Category = ({ params }) => {
   const [projo, setProjo] = useState();
   useEffect(() => {
-    const data = projects.filter((x) => x.category === params.category);
+    const data = projects?.filter((x) => x.category === params.category);
     setProjo(data);
   }, [params.category]);
   return (
     <div>
       <h1 className={styles.subtitle}>
-        {params?.category === "contributions"
+        {params.category === "contributions"
           ? "Corporate Projects"
-          : params?.category}
+          : params.category}
       </h1>
 
       {projo?.map((item) => (
-        <div className={styles.content} key={item?.id}>
+        <div className={styles.content} key={item.id}>
           <div className={styles.descContainer}>
-            <h1>{item?.title}</h1>
-            <p className={styles.desc}>{item?.desc}</p>
-            <Button name="Go to site" url={item?.link} />
+            <h1>{item.title}</h1>
+            <p className={styles.desc}>{item.desc}</p>
+            <Button name="Go to site" url={item.link} />
           </div>
           <div className={styles.image}>
             <Image
-              src={item?.image}
+              src={item.image}
               fill={true}
               className={styles.img}
-              alt={item?.image}
+              alt={item.image}
             />
           </div>
         </div>
