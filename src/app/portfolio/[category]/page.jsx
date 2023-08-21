@@ -14,7 +14,7 @@ const Category = ({ params }) => {
   return (
     <div>
       <h1 className={styles.subtitle}>
-        {params.category === "contributions"
+        {params?.category === "contributions"
           ? "Corporate Projects"
           : params?.category}
       </h1>
