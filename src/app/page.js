@@ -8,7 +8,7 @@ const page = () => {
     <div className={styles.container}>
       <div className={styles.item}>
         <h1 className={styles.title}>
-          Building Tomorrow's World. Transforming Ideas into Innovative
+          Building Tomorrow&apos;s World. Transforming Ideas into Innovative
           Solutions
         </h1>
         <p className={styles.desc}>
