@@ -2,6 +2,10 @@
   display: flex;
   align-items: center;
   gap: 100px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
 }
 
 .item {
@@ -19,7 +23,7 @@
   -webkit-text-fill-color: transparent;
 }
 .desc {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 300;
 }
 
@@ -45,5 +49,20 @@
   }
   to {
     transform: translateY(10px);
+  }
+}
+
+@media (max-width: 768px) {
+  .desc {
+    font-size: 18px;
+  }
+  .title {
+    font-size: 32px;
+  }
+  .item:nth-child(2) {
+    display: none;
+  }
+  .item {
+    width: 100vw;
   }
 }

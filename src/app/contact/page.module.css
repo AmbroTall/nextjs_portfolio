@@ -50,3 +50,9 @@
     transform: translateY(0px) scale(1.03);
   }
 }
+
+@media (max-width: 768px) {
+  .imgContainer {
+    display: none;
+  }
+}

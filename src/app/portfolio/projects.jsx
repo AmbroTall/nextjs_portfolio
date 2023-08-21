@@ -44,7 +44,7 @@ export const projects = [
     title: "Infi Health template",
     desc: "Static websites with good looking UI to enhance my design and front end development skills",
     link: "https://doctor-mary.netlify.app/",
-    image: "/services.png",
+    image: "/doc.png",
     category: "designs",
   },
   {
@@ -52,7 +52,7 @@ export const projects = [
     title: "Calendly clone",
     desc: "Static websites with good looking UI to enhance my design and front end development skills",
     link: "https://calendly.netlify.app/",
-    image: "/services.png",
+    image: "/calendly.png",
     category: "designs",
   },
   {
@@ -60,7 +60,7 @@ export const projects = [
     title: "Mental awareness template",
     desc: "Static websites with good looking UI to enhance my design and front end development skills",
     link: "https://mental-wellness.netlify.app/",
-    image: "/services.png",
+    image: "/mental.png",
     category: "designs",
   },
   {

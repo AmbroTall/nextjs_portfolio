@@ -41,3 +41,16 @@
 .card:hover h1 {
   color: #53c28b;
 }
+
+@media (max-width: 768px) {
+  .desc {
+    font-size: 18px;
+  }
+  .categories {
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+}

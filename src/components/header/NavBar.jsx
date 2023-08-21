@@ -12,6 +12,11 @@ const navlinks = [
 ];
 
 const NavBar = () => {
+  // const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  // const toggleMenu = () => {
+  //   setIsMenuOpen(!isMenuOpen);
+  // };
   return (
     <div className={styles.container}>
       <Link className={styles.logo} href="/">

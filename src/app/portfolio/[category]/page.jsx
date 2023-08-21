@@ -13,7 +13,11 @@ const Category = ({ params }) => {
   }, [params.category]);
   return (
     <div>
-      <h1 className={styles.subtitle}>{params.category}</h1>
+      <h1 className={styles.subtitle}>
+        {params.category === "contributions"
+          ? "Corporate Projects"
+          : params.category}
+      </h1>
 
       {projo?.map((item) => (
         <div className={styles.content} key={item.id}>
