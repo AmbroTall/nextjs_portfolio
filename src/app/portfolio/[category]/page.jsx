@@ -2,16 +2,15 @@
 import React, { useState, useEffect } from "react";
 import styles from "./page.module.css";
 import Image from "next/image";
-import Button from "@/components/button/Button";
 import { projects } from "../projects";
 import Link from "next/link";
 
 const Category = ({ params }) => {
   const [projo, setProjo] = useState([]);
   useEffect(() => {
-    const data = projects?.filter((x) => x?.category === params?.category);
+    const data = projects.filter((x) => x.category === params.category);
     setProjo(data);
-  }, [params.category]);
+  }, []);
   return (
     <div>
       <h1 className={styles.subtitle}>
@@ -20,7 +19,7 @@ const Category = ({ params }) => {
           : params.category}
       </h1>
 
-      {projo?.map((item) => (
+      {projo.map((item) => (
         <div className={styles.content} key={item.id}>
           <div className={styles.descContainer}>
             <h1>{item.title}</h1>
