@@ -28,6 +28,15 @@ const Contact = () => {
           <Button url="" name="Submit" />
         </div>
       </div>
+      <div className={styles.contactDetails}>
+        <p>
+          Email:{" "}
+          <a href="mailto:ambrosetall@gmail.com">ambrosetall@gmail.com</a>
+        </p>
+        <p>
+          Contact: <a href="tel:+254722808670">+254722808670</a>
+        </p>
+      </div>
     </div>
   );
 };
