@@ -5,7 +5,9 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <div className={styels.container}>
-      <div>© 2023 Ambrose Mbithi.</div>
+      <div>
+        © 2024 <a href="mailto:ambrosetall@gmail.com">ambrosetall@gmail.com</a>
+      </div>
       <div className={styels.icons}>
         <Link
           href="https://www.linkedin.com/in/ambrose-mbithi-963849214/"

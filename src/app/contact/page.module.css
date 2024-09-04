@@ -1,19 +1,19 @@
 .container {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center-align content */
+  align-items: flex-start; /* Align content from the start (left) */
   padding: 20px; /* Add some padding for better spacing */
 }
 
 .title {
-  font-size: 50px;
-  text-align: center;
+  font-size: 55px; /* Slightly increased font size */
+  text-align: left; /* Align the title to the left */
   margin-bottom: 20px; /* Space below the title */
 }
 
 .content {
   display: flex;
-  align-items: center;
+  align-items: flex-start; /* Align items to the start (left) */
   gap: 20px;
   margin-bottom: 20px; /* Space below the content */
 }
@@ -29,41 +29,30 @@
   animation: move 3s infinite ease alternate;
 }
 
-.form {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 50px;
-}
-
-.input,
-.textarea {
-  padding: 10px;
-  background: transparent;
-  outline: none;
-  border: 2px solid #bbb;
-  color: #bbb;
-  font-size: 16px;
-}
-
 .contactDetails {
-  text-align: center;
+  flex: 1;
+  text-align: left; /* Align text to the left */
   margin-top: 20px; /* Space above the contact details */
-  color: #444; /* Slightly darker text color for better readability */
 }
 
 .contactDetails p {
-  margin: 5px 0; /* Spacing between the lines of contact information */
+  margin: 20px 0; /* Spacing between the lines of contact information */
+  font-size: 20px; /* Increase the font size slightly for readability */
 }
 
 .contactDetails a {
-  color: #0066cc; /* Link color */
+  color: #69dd78; /* Link color */
   text-decoration: none; /* Remove underline from links */
 }
 
 .contactDetails a:hover {
   text-decoration: underline; /* Add underline on hover */
+}
+
+.message {
+  font-size: 0px; /* Slightly increased font size for better readability */
+  margin-top: 20px;
+  line-height: 1.6; /* Improved readability */
 }
 
 @keyframes move {
@@ -81,6 +70,7 @@
   }
 
   .content {
-    flex-direction: column; /* Stack form on top of each other on small screens */
+    flex-direction: column; /* Stack content on top of each other on small screens */
+    align-items: flex-start; /* Ensure alignment remains consistent on smaller screens */
   }
 }

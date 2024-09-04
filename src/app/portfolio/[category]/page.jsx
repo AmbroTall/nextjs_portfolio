@@ -10,7 +10,7 @@ const Category = ({ params }) => {
   useEffect(() => {
     const data = projects.filter((x) => x.category === params.category);
     setProjo(data);
-  }, []);
+  }, [params.category]);
   return (
     <div>
       <h1 className={styles.subtitle}>

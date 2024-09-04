@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./page.module.css";
 import Image from "next/image";
-import Button from "@/components/button/Button";
 
 const Contact = () => {
   return (
@@ -16,26 +15,21 @@ const Contact = () => {
             className={styles.img}
           />
         </div>
-        <div className={styles.form}>
-          <input type="text" placeholder="name" className={styles.input} />
-          <input type="email" placeholder="email" className={styles.input} />
-          <textarea
-            className={styles.textarea}
-            placeholder="message"
-            cols="30"
-            rows="10"
-          ></textarea>
-          <Button url="" name="Submit" />
+        <div className={styles.contactDetails}>
+          <p>
+            Email:{" "}
+            <a href="mailto:ambrosetall@gmail.com">ambrosetall@gmail.com</a>
+          </p>
+          <p>
+            Contact: <a href="tel:+254722808670">+254722808670</a>
+          </p>
+          <p className={styles.message}>
+            I am a Senior Software Engineer offering cutting-edge software
+            solutions. Whether you need a robust backend, a dynamic frontend, or
+            full-stack development, I&apos;m here to help bring your vision to
+            life. Let&apos;s work together to create something amazing!
+          </p>
         </div>
-      </div>
-      <div className={styles.contactDetails}>
-        <p>
-          Email:{" "}
-          <a href="mailto:ambrosetall@gmail.com">ambrosetall@gmail.com</a>
-        </p>
-        <p>
-          Contact: <a href="tel:+254722808670">+254722808670</a>
-        </p>
       </div>
     </div>
   );
