@@ -1,27 +1,52 @@
-import React from "react";
-import styles from "./page.module.css";
 import Image from "next/image";
-import Hero from "public/hero.png";
 import Button from "@/components/button/Button";
-const page = () => {
+
+const skills = [
+  "React",
+  "Next.js",
+  "TypeScript",
+  "Python",
+  "LangChain",
+  "LLM Integration",
+  "AWS",
+  "Docker",
+];
+
+const Page = () => {
   return (
-    <div className={styles.container}>
-      <div className={styles.item}>
-        <h1 className={styles.title}>
-          Building Tomorrow&apos;s World. Transforming Ideas into Innovative
-          Solutions
-        </h1>
-        <p className={styles.desc}>
-          Transforming Ideas into Reality. Unveiling the Passionate Journey of a
-          Software and Full Stack Engineer.
+    <div className="grid items-center gap-12 py-12 md:grid-cols-2 md:py-24">
+      <div className="flex flex-col gap-6">
+        <p className="text-sm font-medium tracking-wide text-emerald-600 dark:text-emerald-400">
+          Software Engineer & AI/ML Integration Specialist
         </p>
-        <Button url="/portfolio" name="See my works" />
+        <h1 className="text-4xl font-bold tracking-tight text-balance sm:text-5xl">
+          Building Tomorrow&apos;s World with AI-Powered Software
+        </h1>
+        <p className="text-lg text-neutral-600 dark:text-neutral-400">
+          5+ years shipping full-stack applications and integrating LLM
+          workflows, agentic automation, and vector search into production
+          systems across healthcare, legal tech, and finance.
+        </p>
+        <div className="flex flex-wrap gap-2">
+          {skills.map((skill) => (
+            <span
+              key={skill}
+              className="rounded-full border border-neutral-200 px-3 py-1 text-xs font-medium text-neutral-600 dark:border-neutral-800 dark:text-neutral-400"
+            >
+              {skill}
+            </span>
+          ))}
+        </div>
+        <div className="flex flex-wrap gap-3">
+          <Button url="/portfolio" name="See my work" />
+          <Button url="/resume" name="View resume" />
+        </div>
       </div>
-      <div className={styles.item}>
-        <Image src={Hero} className={styles.image} alt="hero" />
+      <div className="relative mx-auto aspect-square w-full max-w-md">
+        <Image src="/hero.png" alt="hero" priority fill className="object-contain" />
       </div>
     </div>
   );
 };
 
-export default page;
+export default Page;

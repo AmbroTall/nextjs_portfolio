@@ -1,10 +1,7 @@
-import React from "react";
-import styles from "./page.module.css";
-
 const Layout = ({ children }) => {
   return (
-    <div>
-      <h1 className={styles.title}>My Works</h1>
+    <div className="py-12">
+      <h1 className="mb-8 text-3xl font-bold tracking-tight">My Works</h1>
       {children}
     </div>
   );

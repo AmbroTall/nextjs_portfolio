@@ -1,63 +1,43 @@
 import React from "react";
-import styels from "./page.module.css";
-import Image from "next/image";
 import Link from "next/link";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+
 const Footer = () => {
   return (
-    <div className={styels.container}>
+    <div className="flex flex-col items-center justify-between gap-4 border-t border-neutral-200 py-8 text-sm text-neutral-600 sm:flex-row dark:border-neutral-800 dark:text-neutral-400">
       <div>
-        © 2024 <a href="mailto:ambrosetall@gmail.com">ambrosetall@gmail.com</a>
+        © {new Date().getFullYear()}{" "}
+        <a
+          href="mailto:ambrosetall@gmail.com"
+          className="hover:text-neutral-900 dark:hover:text-white"
+        >
+          Ambrose Mbithi
+        </a>
       </div>
-      <div className={styels.icons}>
+      <div className="flex items-center gap-4">
         <Link
           href="https://www.linkedin.com/in/ambrose-mbithi-963849214/"
           target="_blank"
+          aria-label="LinkedIn"
+          className="hover:text-neutral-900 dark:hover:text-white"
         >
-          <Image
-            src="/linkedin.png"
-            width={20}
-            height={20}
-            className={styels.icon}
-            alt="facebook"
-          />
+          <FaLinkedin size={18} />
         </Link>
-        <Link href="https://github.com/AmbroTall" target="_blank">
-          <Image
-            src="/github.png"
-            width={20}
-            height={20}
-            className={styels.icon}
-            alt="facebook"
-          />
+        <Link
+          href="https://github.com/AmbroTall"
+          target="_blank"
+          aria-label="GitHub"
+          className="hover:text-neutral-900 dark:hover:text-white"
+        >
+          <FaGithub size={18} />
         </Link>
-        {/* <Image
-          src="/1.png"
-          width={15}
-          height={15}
-          className={styels.icon}
-          alt="facebook"
-        />
-        <Image
-          src="/2.png"
-          width={15}
-          height={15}
-          className={styels.icon}
-          alt="facebook"
-        />
-        <Image
-          src="/3.png"
-          width={15}
-          height={15}
-          className={styels.icon}
-          alt="facebook"
-        />
-        <Image
-          src="/4.png"
-          width={15}
-          height={15}
-          className={styels.icon}
-          alt="facebook"
-        /> */}
+        <a
+          href="mailto:ambrosetall@gmail.com"
+          aria-label="Email"
+          className="hover:text-neutral-900 dark:hover:text-white"
+        >
+          <FaEnvelope size={18} />
+        </a>
       </div>
     </div>
   );
