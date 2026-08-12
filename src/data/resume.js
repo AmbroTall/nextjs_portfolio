@@ -39,19 +39,18 @@ export const skillGroups = [
 
 export const experience = [
   {
-    role: "AI Data Annotator",
+    role: "AI Model Evaluation & Training Data Engineer",
     company: "Turing Lab · AI Research Division",
     period: "April 2026 – Present",
     location: "Remote",
     summary:
-      "Contributing to the OpenClaw SFT Trace Collection project, producing high-quality supervised fine-tuning trajectories for next-generation AI model training.",
+      "Design and execute evaluation protocols for agentic AI systems on the OpenClaw SFT Trace Collection project, producing supervised fine-tuning datasets for next-generation model training.",
     bullets: [
-      "Executing multi-turn persona-grounded task sessions as alter-ego profiles across life and work domains",
-      "Annotating agent trajectories with step-level labels (Correct / Incorrect / Redundant) and rubric-based quality scores",
-      "Instantiating generic task objectives into concrete, contextually grounded instructions drawn from persona workspace files",
-      "Evaluating AI agent tool use across browser automation, scheduling, file operations, messaging, and API integrations",
-      "Maintaining strict persona fidelity and communication register consistency across sessions to maximize SFT signal quality",
-      "Verifying task completion against environment state rather than agent assertions prior to trace submission",
+      "Architect multi-turn task scenarios exercising agent tool-use across browser automation, scheduling, file operations, messaging, and API integrations",
+      "Apply rubric-based quality scoring and step-level correctness labeling to agent trajectories, directly shaping model training signal",
+      "Translate abstract task specifications into concrete, verifiable test scenarios grounded in realistic workspace context",
+      "Enforce environment-state verification (not agent self-reporting) as the standard for validating task completion",
+      "Maintain consistency and fidelity across multi-session evaluation workflows to maximize training signal quality",
     ],
   },
   {
